@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="https://dl.dropboxusercontent.com/u/329803/div/favicon.png" />
+    <title>MD Shell</title>
+    <style type="text/css">
+      body { font-size:9pt; background-color:#E0E0E0; }
+      code, #editor { font-family: Inconsolata, 'Droid Sans Mono', 'Ubuntu Mono', Consolas, 'Lucida Console', monospace; }
+      #editor { min-height:30em; border:solid 2px darkgray; padding:.5em; background-color:white; }
+      .markdown-here-wrapper {font-family:Ubuntu, 'DejaVu Sans', arial, helvetica, sans-serif;} /*You should set this in the extension's CSS*/
+      @media print {
+        .ui {display:none;}
+        body { background-color:white; }
+        div#editor { border:none; }
+      }
+    </style>
+    <script type="text/javascript"><!--
+      function toggle_visibility(id) {
+         var e = document.getElementById(id);
+         if(e.style.display == 'block')
+            e.style.display = 'none';
+         else
+            e.style.display = 'block';
+      }  //-->
+    </script>
+  </head>
+  <body>
+    <h1 class="ui">MarkDown Shell <small>v.1.04</small></h1>
+    <p class="ui">For use with the <a href="http://markdown-here.com/">Markdown Here</a> extension.</p>
+    <div class="ui">
+      <h2><a href="#" onclick="toggle_visibility('man');">Manual&hellip;</a></h2>
+      <div id="man" style="display:none;">
+      <h3>What the heck?</h3>
+      <p>A very basic shell, written in html and css only, to be used together with the <b>Markdown Here</b> extension as a simple <a href="https://daringfireball.net/projects/markdown/">Markdown</a> editor.</p>
+      <h3>Dependencies</h3>
+      <ol>
+        <li>A web browser supported by the <i>Markdown Here</i> extension, which boils down to <i>Gecko</i> and <i>Chromium</i> based browsers.</li>
+        <li>The <i>Markdown Here</i> extension must be installed in your browser.</li>
+      </ol>
+      <h3>Usage</h3>
+      <ul>
+        <li>Write your markdown stuff (or paste from a text editor), <code>&lt;right click&gt;[Markdown Toggle]</code> to render, <code>&lt;right click&gt;[Markdown Toggle]</code> again to unrender (or use Ctrl+Alt+M).</li>
+        <li>You can print directly after rendering: Only your content will be printed.</li>
+        <li>You can save to PDF (or other formats) by <em>printing to a file</em>. The method depends on your OS and is beyond the scope of this manual.</li>
+        <li>You can save your document (Ctrl+S) to a new html file, and edit it later, if you save it <strong><em>while rendered</em></strong>. 'Markdown Here' takes care of saving your source code inside the file. Just unrender to edit.</li>
+        <li>If you get tired of seeing all this, use this version instead :-)
+          <pre style="border:solid 1px silver;background:white;padding:.5em;"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;MD Shell&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div contenteditable="true" style="min-height:200px;" title="Use with 'Markdown Here' extension!"&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></li>
+      </ul>
+      </div>
+    </div>
+    <!-- Now, get to the point please... -->
+    <div id="editor" contenteditable="true"></div>
+    <p class="ui"><small>Released 2016-04-01 under the <a href="#" onclick="toggle_visibility('wtf');">WTFPL</a></small></p>
+    <div class="ui">
+      <div id="wtf" style="display:none;"><pre>
+      DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                    Version 2, December 2004
+
+ Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT THE FUCK YOU WANT TO.</pre>
+        <p><small>The <a href="http://www.wtfpl.net/">WTFPL</a> official site.</small></p>
+      </div>
+    </div>
+  </body>
+</html>
