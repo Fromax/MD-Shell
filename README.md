@@ -1,12 +1,13 @@
-### What the heck?
+## MD-Shell
+#### What the heck?
 
-A very basic shell, written in html and css only, to be used together with the Markdown Here extension as a simple Markdown editor.
+A very basic shell, written in html and css only, to be used together with the [Markdown Here](http://markdown-here.com/) browser extension as a simple [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet) editor.
 Released 2016-04-01 under the WTFPL.
 
 #### Dependencies
 
-- A web browser supported by the Markdown Here extension, which boils down to Gecko and Chromium based browsers.
-- The Markdown Here extension must be installed in your browser.
+- A web browser supported by the 'Markdown Here' extension, which boils down to *Gecko* and *Chromium* based browsers.
+- The 'Markdown Here' extension must be installed in your browser.
 
 #### Usage
 
