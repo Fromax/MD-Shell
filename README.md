@@ -6,7 +6,7 @@ Released 2016-04-01 under the WTFPL.
 
 #### Dependencies
 
-- A web browser supported by the 'Markdown Here' extension, which boils down to *Gecko* and *Chromium* based browsers.
+- The Mozilla Firefox web browser, or a compatible web browser.
 - The 'Markdown Here' extension must be installed in your browser.
 
 #### Usage
